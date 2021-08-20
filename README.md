@@ -27,7 +27,7 @@
 ---
 
 
-![图片](https://github.com/nfc-apps/weline-android/blob/master/img/welinelogo.png)
+![图片](https://github.com/nfc-apps/weline-android/blob/main/img/welinelogo.png)
 
 
 ---
@@ -94,11 +94,11 @@ Please contact Weline.io Inc. to apply for SDK authorization information. After 
 
 1. Put the cmapi_ShieldAPI_vX_X_X_cmg.aar package in the libs directory of your application project (the file name in the picture is only an example, please refer to the actual SDK file name):
 
-![图片](https://github.com/nfc-apps/weline-android/blob/master/img/image%20(1).png)
+![图片](https://github.com/nfc-apps/weline-android/blob/main/img/image%20(1).png)
 
 2. In the build.gradle of the main project, add the following content and use the libs directory as a dependency repository:
 
-![图片](https://github.com/nfc-apps/weline-android/blob/master/img/image%20(2).png)
+![图片](https://github.com/nfc-apps/weline-android/blob/main/img/image%20(2).png)
 
 ```plain
 allprojects {
@@ -113,7 +113,7 @@ allprojects {
 ```
 3. In the build.gradle of your App Module, add the following content to make the Weline SDK a project dependency:
 
-![图片](https://github.com/nfc-apps/weline-android/blob/master/img/image%20(3).png)
+![图片](https://github.com/nfc-apps/weline-android/blob/main/img/image%20(3).png)
 
 ```plain
 dependencies {
@@ -123,7 +123,7 @@ dependencies {
 }
 ```
 Finally, synchronize the configuration file Sync project with Gradle Files:
-![图片](https://github.com/nfc-apps/weline-android/blob/master/img/image%20(4).jpeg)
+![图片](https://github.com/nfc-apps/weline-android/blob/main/img/image%20(4).jpeg)
 
 So far, the import of We line SDK development resources is complete.
 
@@ -297,7 +297,7 @@ Of course, you can also monitor in other places, such as Fragment or Application
 
 ### **Login callback process**
 
-![图片](https://github.com/nfc-apps/weline-android/blob/master/img/image%20(6).png)
+![图片](https://github.com/nfc-apps/weline-android/blob/main/img/image%20(6).png)
 
 ### **Login status value**
 
