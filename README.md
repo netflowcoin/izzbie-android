@@ -9,7 +9,7 @@
 
 
 
-**Weline Android SDK Access Guides**
+**izzbie Android SDK Access Guides**
 
 
 
@@ -27,31 +27,31 @@
 ---
 
 
-![图片](https://github.com/nfc-apps/weline-android/blob/main/img/welinelogo.png)
+![图片](https://github.com/netflowcoin/izzbie-android/blob/main/img/izzbielogo.png)
 
 
 ---
 **Secret Level**：**Secret**
 
-Weline.io
+izzbie.io
 
 # **About Guides**
 
 ## **Copyright Notice**
 
-Weline.io © 2021 All rights reserved. Unless otherwise specified, the copyright of any text description, document format, illustration, photo, method, process, etc. appearing in this document belongs to Weline.io and is protected by relevant property rights and copyright laws. Without the written permission of Weline.io, it is not allowed to copy, distribute, reproduce, disclose or rewrite all or part of this document.
+izzbie.io © 2021 All rights reserved. Unless otherwise specified, the copyright of any text description, document format, illustration, photo, method, process, etc. appearing in this document belongs to izzbie.io and is protected by relevant property rights and copyright laws. Without the written permission of izzbie.io, it is not allowed to copy, distribute, reproduce, disclose or rewrite all or part of this document.
 
 ## **Information Update**
 
-This document is only used to provide information for NDA users, and it can be changed or withdrawn by Weline.io at any time.
+This document is only used to provide information for NDA users, and it can be changed or withdrawn by izzbie.io at any time.
 
 ## **Disclaimer**
 
-In accordance with the scope of the applicable law, Weline.io provides this document "as is" and does not assume any form of guarantee, including (but not limited to) any implied marketability, suitability for special purposes, or non-infringement. Under any circumstances, Weline.io will not be liable for any direct or indirect loss or damage caused by the end user or any third party due to the use of the SDK/backend interface according to the instructions, even if Weline.io is clearly aware of these losses or damages, These damages include (but are not limited to) loss of profits, business interruption, reputation or loss of data.
+In accordance with the scope of the applicable law, izzbie.io provides this document "as is" and does not assume any form of guarantee, including (but not limited to) any implied marketability, suitability for special purposes, or non-infringement. Under any circumstances, izzbie.io will not be liable for any direct or indirect loss or damage caused by the end user or any third party due to the use of the SDK/backend interface according to the instructions, even if izzbie.io is clearly aware of these losses or damages, These damages include (but are not limited to) loss of profits, business interruption, reputation or loss of data.
 
 ## **Who should read this Guides**
 
-The readers of this guides are developers of third-party vendors who have signed an NDA (non-disclosure agreement) with Weline.io.
+The readers of this guides are developers of third-party vendors who have signed an NDA (non-disclosure agreement) with izzbie.io.
 
 ## **Secret Level**
 
@@ -73,7 +73,7 @@ The confidentiality of this guides is secret, and it is forbidden to open this f
 
 ## **1. Summary**
 
-This document describes the Weline.io SDK used on the Android platform when third-party vendors integrate virtual networks. Its purpose is to allow third-party developers’ developers to quickly embed virtual network functions into third-party applications.
+This document describes the izzbie.io SDK used on the Android platform when third-party vendors integrate virtual networks. Its purpose is to allow third-party developers’ developers to quickly embed virtual network functions into third-party applications.
 
 This document is suitable for the company's internal and third-party R&D personnel who have signed the NDA to read.
 
@@ -84,21 +84,21 @@ The target system to run requires Android 5.0 or higher, and Android 4.4 and low
 ## **3. Quick Access**
 ## **Step 1: Get AppID**
 
-Please contact Weline.io Inc. to apply for SDK authorization information. After the application is successful, we will provide a unique identifier for accessing the platform, including AppID, PartnerId and DeviceClassNum, and provide the corresponding SDK text (cmapi_ShieldAPI_vX_X_X_cmg.aar) and Demo project.
+Please contact izzbie.io Inc. to apply for SDK authorization information. After the application is successful, we will provide a unique identifier for accessing the platform, including AppID, PartnerId and DeviceClassNum, and provide the corresponding SDK text (cmapi_ShieldAPI_vX_X_X_cmg.aar) and Demo project.
 
 ## **Step 2: Configure the application**
 
 ## **Configuration environment**
 
-### **Import Weline SDK**
+### **Import izzbie SDK**
 
 1. Put the cmapi_ShieldAPI_vX_X_X_cmg.aar package in the libs directory of your application project (the file name in the picture is only an example, please refer to the actual SDK file name):
 
-![图片](https://github.com/nfc-apps/weline-android/blob/main/img/image%20(1).png)
+![图片](https://github.com/netflowcoin/izzbie-android/blob/main/img/image%20(1).png)
 
 2. In the build.gradle of the main project, add the following content and use the libs directory as a dependency repository:
 
-![图片](https://github.com/nfc-apps/weline-android/blob/main/img/image%20(2).png)
+![图片](https://github.com/netflowcoin/izzbie-android/blob/main/img/image%20(2).png)
 
 ```plain
 allprojects {
@@ -111,9 +111,9 @@ allprojects {
     }
 }
 ```
-3. In the build.gradle of your App Module, add the following content to make the Weline SDK a project dependency:
+3. In the build.gradle of your App Module, add the following content to make the izzbie SDK a project dependency:
 
-![图片](https://github.com/nfc-apps/weline-android/blob/main/img/image%20(3).png)
+![图片](https://github.com/netflowcoin/izzbie-android/blob/main/img/image%20(3).png)
 
 ```plain
 dependencies {
@@ -123,7 +123,7 @@ dependencies {
 }
 ```
 Finally, synchronize the configuration file Sync project with Gradle Files:
-![图片](https://github.com/nfc-apps/weline-android/blob/main/img/image%20(4).jpeg)
+![图片](https://github.com/netflowcoin/izzbie-android/blob/main/img/image%20(4).jpeg)
 
 So far, the import of We line SDK development resources is complete.
 
@@ -184,7 +184,7 @@ public class LoginActivity extends Activity {
 
 ### **Log in**
 
-★ Note: The Mobile Shield SDK does not currently support user registration. All account information that can be logged in to the system is provided by a third-party manufacturer to connect to the Weline.io back-end system.
+★ Note: The Mobile Shield SDK does not currently support user registration. All account information that can be logged in to the system is provided by a third-party manufacturer to connect to the izzbie.io back-end system.
 
 You can call the CMAPI.getInstance().login() method to log in with the user name and password according to the user name and password entered by the user.
 
@@ -297,7 +297,7 @@ Of course, you can also monitor in other places, such as Fragment or Application
 
 ### **Login callback process**
 
-![图片](https://github.com/nfc-apps/weline-android/blob/main/img/image%20(6).png)
+![图片](https://github.com/netflowcoin/izzbie-android/blob/main/img/image%20(6).png)
 
 ### **Login status value**
 
@@ -499,7 +499,7 @@ import net.sdvn.cmapi.global.Constants;
 
 ## **6. FAQ**
 * **Cannot log in, prompt 2018——VPN permission denied**
-1. Please note that the Weline.io service is built on the basis of a VPN. To use the Weline.io service, please authorize the VPN for the application first. When the login is called for the first time, a system permission inquiry window will pop up. If you refuse, you need to enter the system setting interface to set it.
+1. Please note that the izzbie.io service is built on the basis of a VPN. To use the izzbie.io service, please authorize the VPN for the application first. When the login is called for the first time, a system permission inquiry window will pop up. If you refuse, you need to enter the system setting interface to set it.
 
 2.VThe VPN tunnel is occupied by other applications. Please close other VPN applications and try to log in again. If the channel is preempted by other VPN applications after logging in, the SDK will automatically reconnect after closing other VPN applications.
 
