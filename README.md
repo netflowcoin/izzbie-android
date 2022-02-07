@@ -130,9 +130,11 @@ So far, the import of We line SDK development resources is complete.
 ### **Dynamic permissions**
 
 The SDK requires the user to authorize dynamic permissions. Before calling the SDK API, check whether the user with the following permissions has agreed to the authorization:
+```plain
 android.permission.READ_PHONE_STATE
 android.permission.WRITE_EXTERNAL_STORAGE
 android.permission.READ_EXTERNAL_STORAGE
+```
 
 ★ Note: The above dynamic permissions need to be applied for by a third party in the application. For specific dynamic permissions configuration methods, please check the latest Google official documents.
 
